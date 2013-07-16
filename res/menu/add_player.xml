@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/menu_ok"
+          android:icon="@drawable/ic_action_ok"
+          android:title="@string/menu_ok"
+          android:showAsAction="ifRoom" />
+	<item android:id="@+id/menu_cancel"
+          android:icon="@drawable/ic_action_cancel"
+          android:title="@string/menu_cancel"
+          android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/menu_settings"/>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Time 1 - Começa com a bola"
+            android:background="#CCCCCC"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minHeight="30sp"
+            android:textSize="18sp"/>
+
+        <ListView
+            android:id="@+id/playersTeam1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:textSize="8px">
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Time 2 - Escolhe o lado"
+            android:background="#CCCCCC"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minHeight="30sp"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/playersTeam2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:textSize="8px">
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

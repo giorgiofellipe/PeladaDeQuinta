@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#cccccc"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp" >
+
+    <!-- android:descendantFocusability ="blocksDescendants"
+  	é Usado quando estiver usando uma ListView em uma ListFragment para 
+  	setar o foco nos itens da ListView e não nos Views de texto, etc... 
+  	Solução para usar o OnClick-->
+
+    <TextView
+        android:id="@+id/matchDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:text="01/01/0001"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstTeamTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/matchDate"
+        android:layout_below="@+id/matchDate"
+        android:text="Time 1:" 
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/secondTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstTeamTitle"
+        android:layout_below="@+id/firstTeamTitle"
+        android:paddingLeft="5dp"
+        android:text="Scorpion, SubZero, Smoke, Sheeva, Montaro"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/secondTeamTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/secondTeam"
+        android:layout_below="@+id/secondTeam"
+        android:text="Time 2:" 
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondTeamTitle"
+        android:paddingLeft="5dp"
+        android:text="Fulano, Beltrano, Ciclano, Fubeltrano, Cifulano"
+        android:textColor="#333333" />
+
+</RelativeLayout>

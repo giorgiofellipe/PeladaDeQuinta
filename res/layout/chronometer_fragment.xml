@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>  
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/RelativeLayout1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical" >
+
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/chronometer"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="23dp" >
+
+         <Button
+             android:id="@+id/start_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="INICIAR" />
+
+         <Button
+             android:id="@+id/pause_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="PAUSAR" />
+
+         <Button
+             android:id="@+id/stop_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="PARAR " />
+     </LinearLayout>
+
+     <Chronometer
+         android:id="@+id/chronometer"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="29dp"
+         android:format="%s"
+         android:text="Chronometer"
+         android:textSize="48dp" />
+
+     <CheckBox
+         android:id="@+id/playSound"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout1"
+         android:layout_below="@+id/linearLayout1"
+         android:layout_marginTop="21dp"
+         android:text="@string/askPlaySound" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout1"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="22dp"
+         android:text="Tempo"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <EditText
+         android:id="@+id/howManyTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/textView1"
+         android:layout_alignBottom="@+id/textView1"
+         android:layout_alignLeft="@+id/chronometer"
+         android:layout_alignRight="@+id/chronometer"
+         android:ems="3"
+         android:inputType="number"
+         android:text="15" >
+
+         <requestFocus />
+     </EditText>
+
+ </RelativeLayout> 

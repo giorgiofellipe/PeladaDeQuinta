@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pelada de Quinta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="menu_addplayer">Add</string>
+    <string name="menu_random">Randomize</string>
+    <string name="menu_ok">OK</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="ContextoDados_onCreate">create table if not exists players (ID INTEGER PRIMARY KEY AUTOINCREMENT, name, quality, status, isgoalkeeper) \n
+        create table if not exists history (matchdate datetime default CURRENT_TIMESTAMP, firstteam, secondteam)</string>
+	<string name="ContextoDados_onUpgrade">DROP TABLE IF EXISTS history</string>
+	<string name="add_player_title">Adicionar Jogador</string>
+	<string name="add_player_name">Nome:</string>
+	<string name="add_player_quality">Nível:</string>
+	<string name="add_player_goalkeeper">Goleiro</string>
+	<string name="add_player_status">Presente</string>
+	<string name="errorRatingBar_Zero">Você deve informar o nível do jogador.</string>
+	<string name="errorRatingBar_EmptyName">Você deve informar um nome válido.</string>
+	<string name="askPlaySound">Tocar alarme ao terminar tempo?</string>
+</resources>
