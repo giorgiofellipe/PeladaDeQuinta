@@ -3,6 +3,8 @@ PeladaDeQuinta
 
 Aplicativo ANDROID para randomizar equipes de futebol (pelada) equilibradas pela qualidade dos jogadores.
 
+Para Versões 4.0+.
+
 ------------------------------------------------------------------------------------------------------------------------
 Jogadores - Table: players
 ------------------------------------------------------------------------------------------------------------------------
