@@ -1,4 +1,4 @@
-PeladaDeQuinta
+Pelada De Quinta
 ==============
 
 Aplicativo ANDROID para randomizar equipes de futebol (pelada) equilibradas pela qualidade dos jogadores.
