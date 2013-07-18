@@ -38,3 +38,8 @@ matchdate (datetime)      - Data da partida
 firstteam (string)        - Jogadores do primeiro time
 
 secondteam (string)       - Jogadores do segundo time
+
+
+
+--------
+Desenvolvido por Giorgio Fellipe
